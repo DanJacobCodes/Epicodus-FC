@@ -4,6 +4,7 @@ import { Member } from '../member.model';
 import { MemberService } from '../member.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
+
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',

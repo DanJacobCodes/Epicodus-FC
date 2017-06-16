@@ -13,6 +13,7 @@ import { AdminComponent } from './admin/admin.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { EditMemberComponent } from './edit-member/edit-member.component';
 
 
 export const firebaseConfig = {
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     MemberComponent,
     WelcomeComponent,
     MemberDetailComponent,
-    AdminComponent
+    AdminComponent,
+    EditMemberComponent
   ],
   imports: [
     BrowserModule,

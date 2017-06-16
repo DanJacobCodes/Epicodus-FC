@@ -21,4 +21,14 @@ export class MemberService {
  getMemberById(memberId: string){
    return this.database.object('members/' + memberId);
    }
+
+   //Remember to add Update and Delete here//
+   updateMember(localUpdatedMember){
+  var projectEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+  projectEntryInFirebase.update({name: localUpdatedMember.name,
+                                 position: localUpdatedMember.position});
+  }
+
+
+
 }

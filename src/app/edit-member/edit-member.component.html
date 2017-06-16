@@ -1,0 +1,17 @@
+<h4>Edit Member</h4>
+
+<div>
+  <label>Name:</label>
+  <br>
+  <input [(ngModel)]="selectedMember.name">
+</div>
+
+<div>
+  <label>Position of Member:</label>
+  <br>
+  <input [(ngModel)]="selectedMember.position">
+</div>
+
+<br>
+<button (click)="updatingMember(selectedMember)" class="btn btn-primary">Edit your project</button>
+<hr>

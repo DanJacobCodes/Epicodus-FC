@@ -1,4 +1,6 @@
 <h1>Member Facts</h1>
 
-<h3>{{(memberToDisplay | async)?.name}}</h3>
-<h4>By {{(memberToDisplay | async)?.position}}</h4>
+<div class="well">
+  <h3>Member:{{(memberToDisplay | async)?.name}}</h3>
+  <h4>Position:{{(memberToDisplay | async)?.position}}</h4>
+</div>
