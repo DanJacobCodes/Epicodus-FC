@@ -1,6 +1,16 @@
 <h3>Latest Members</h3>
-<!-- Remember to add Filter in ngFor here later -->
-<div *ngFor="let member of members | async"   class="panel panel-default">
+<!-- Filtering by Experience -->
+<br>
+<h3 id="select">Filter by Experience:</h3>
+<select (change)="onChange($event.target.value)">
+<option value="all">All Members</option>
+<option value="amateur">Young Talent</option>
+<option value="veteran">Reliable Veterans</option>
+</select>
+<hr>
+
+<!-- Members View -->
+<div *ngFor="let member of members | async | years: filterByYear"   class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)">Name: <em>{{member.name}}</em></h3>
     <div *ngIf="currentRoute === '/admin'">

@@ -10,6 +10,7 @@ import { MemberComponent } from './member/member.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { YearsPipe } from './years.pipe';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -32,6 +33,7 @@ export const firebaseConfig = {
     WelcomeComponent,
     MemberDetailComponent,
     AdminComponent,
+    YearsPipe,
     EditMemberComponent
   ],
   imports: [

@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { Member } from '../member.model';
 import { MemberService } from '../member.service';
 import { FirebaseListObservable } from 'angularfire2/database';
-
+import {Pipe, PipeTransform} from '@angular/core';
 
 @Component({
   selector: 'app-welcome',
@@ -11,8 +11,10 @@ import { FirebaseListObservable } from 'angularfire2/database';
   styleUrls: ['./welcome.component.css'],
   providers: [MemberService]
 })
+
 export class WelcomeComponent implements OnInit {
   members:FirebaseListObservable<any[]>;
+  filterByYear: number;
   currentRoute: string = this.router.url;
 
   constructor(private router: Router, private memberService: MemberService) { }
@@ -25,9 +27,9 @@ export class WelcomeComponent implements OnInit {
    this.router.navigate(['members', clickedMember.$key]);
   };
 
-  // onChange(option){
-  //   this.filterByPosition = option;
-  // }
+  onChange(option){
+    this.filterByYear = option;
+  }
 
 
 }
