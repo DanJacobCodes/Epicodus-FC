@@ -22,13 +22,15 @@ export class MemberService {
    return this.database.object('members/' + memberId);
    }
 
-   //Remember to add Update and Delete here//
+   //Updates and Deletes//
    updateMember(localUpdatedMember){
-  var projectEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
-  projectEntryInFirebase.update({name: localUpdatedMember.name,
+  var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+  memberEntryInFirebase.update({name: localUpdatedMember.name,
                                  position: localUpdatedMember.position});
   }
 
-
-
+  deleteMember(localMemberToDelete){
+    var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
 }
