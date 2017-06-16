@@ -8,7 +8,7 @@ Epicodus JavaScript Project Week 4 || Angular 2 Extended
 
 
 ## Description
-This project serves as practice with the Angular 2 Framework. This web application will allow users to manage a club. In this case, I chose to manage a fictional club called Epicodus FC. Users will be able to add members to the club, edit their details, remove members from the club, and filter members by experience. This application is connected to Firebase so all entries will be saved through the cloud database. 
+This project serves as practice with the Angular 2 Framework, more specifically: use of a router to navigate between pages, filtering data with pipes, using a service to share data between multiple components, CRUD functionality, and implementation of components. This web application will allow users to manage a club. In this case, I chose to manage a fictional club called Epicodus FC. Users will be able to add members to the club, edit their details, remove members from the club, and filter members by experience. This application is connected to Firebase so all entries will be saved through the cloud database.
 
 ## Development server
 
