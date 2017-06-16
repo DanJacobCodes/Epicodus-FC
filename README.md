@@ -1,10 +1,16 @@
-# ClubManager
+# Club Manager
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
 
 ### By Dan Jacob 6/16/17
 
 Epicodus JavaScript Project Week 4 || Angular 2 Extended
+
+### Specs
+* Users will be able to add members
+* Users will be able to edit and remove members
+* Users will be able to filter members by experience
+* Users will be able to view details of specific members
 
 
 ## Description
