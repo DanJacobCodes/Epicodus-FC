@@ -1,4 +1,3 @@
 export class Member {
-  public yearsPro: number
-  constructor(public name: string, public position: string) {}
+  constructor(public name: string, public position: string , public years: number) {}
 }

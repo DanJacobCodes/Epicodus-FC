@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
 
+### By Dan Jacob 6/16/17
+
+Epicodus JavaScript Project Week 4 || Angular 2 Extended
+
+
+## Description
+This project serves as practice with the Angular 2 Framework. This web application will allow users to manage a club. In this case, I chose to manage a fictional club called Epicodus FC. Users will be able to add members to the club, edit their details, remove members from the club, and filter members by experience. This application is connected to Firebase so all entries will be saved through the cloud database. 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

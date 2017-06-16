@@ -16,8 +16,15 @@
         <input #newPosition>
       </div>
 
+      <div>
+        <label>Experience:</label>
+        <br>
+        <input #newYears type="number">
+      </div>
+
+
       <br>
-      <button class="btn btn-success" (click) = "submitForm(newName.value, newPosition.value); newName.value=''; newPosition.value=''">Sign up for Epicodus FC Squad!</button>
+      <button class="btn btn-success" (click) = "submitForm(newName.value, newPosition.value, newYears.value); newName.value=''; newPosition.value=''; newYears.value=''"> Add to Epicodus FC </button>
     </div>
     <div>
       <app-welcome></app-welcome>

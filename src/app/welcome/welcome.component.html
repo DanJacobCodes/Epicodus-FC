@@ -10,7 +10,7 @@
 <hr>
 
 <!-- Members View -->
-<div *ngFor="let member of members | async | years: filterByYear"   class="panel panel-default">
+<div *ngFor="let member of members | async | years:filterByYear"   class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)">Name: <em>{{member.name}}</em></h3>
     <div *ngIf="currentRoute === '/admin'">

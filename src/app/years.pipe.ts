@@ -13,7 +13,7 @@ export class YearsPipe implements PipeTransform {
     var output: Member[] = [];
     if(desiredYears === "amateur") {
        for (var i = 0; i< input.length; i++){
-         if (input[i].yearsPro <= 2)
+         if (input[i].years <= 2)
          {
            output.push(input[i]);
          }
@@ -24,7 +24,7 @@ export class YearsPipe implements PipeTransform {
      {
        for (var i = 0; i< input.length; i++)
        {
-         if (input[i].yearsPro > 2)
+         if (input[i].years > 2)
          {
            output.push(input[i]);
          }
