@@ -17,7 +17,7 @@ export class AdminComponent implements OnInit {
 
   submitForm(name: string, position: string) {
    var newMember: Member = new Member(name, position);
-   this.projectService.addMember(newMember);
+  //  this.memberService.addMember(newMember);
  }
 
 }
