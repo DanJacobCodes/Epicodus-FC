@@ -1,3 +1,9 @@
-<p>
-  welcome works!
-</p>
+<h3>Latest Members</h3>
+<!-- Remember to add Filter in ngFor here later -->
+<div *ngFor="let member of members | async"   class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(member)">Name: <em>{{member.name}}</em> <br><b>Position: {{member.position}}</b></h3>
+    <div *ngIf="currentRoute === '/admin'">
+      <hr>
+  </div>
+</div>

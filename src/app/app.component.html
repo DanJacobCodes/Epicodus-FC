@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -14,10 +13,11 @@
 
 <div class="container">
   <h1>{{title}}</h1>
+  <router-outlet></router-outlet>
 
   <footer class="footer">
     <div class="container">
-      <a class="text-muted" routerLink="admin">Administrator</a>
+      <button class="btn btn-success text-muted" routerLink="admin" >Add Member</button>
     </div>
   </footer>
 </div>

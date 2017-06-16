@@ -1,3 +1,7 @@
-<p>
-  member works!
-</p>
+<h2>View Members</h2>
+<hr>
+<div *ngFor="let member of members | async"   class="panel panel-default">
+  <div class="panel-body">
+    <h4 (click)="goToDetailPage(member)"><em>{{member.name}}</em>, <br> <em>{{member.position}}</em></h4>
+  </div>
+</div>
