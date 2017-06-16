@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { MemberComponent } from './member/member.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +14,11 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
     AboutComponent,
     MemberComponent,
     WelcomeComponent,
-    MemberDetailComponent
+    MemberDetailComponent,
+    AdminComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
