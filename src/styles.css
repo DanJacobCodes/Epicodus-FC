@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+#nav{
+  background-color:#79DADC;
+}
+
+
+
+#about {
+  text-align: center;
+}
+
+p {
+  font-size: 18pt;
+}
+
+#addMem {
+  margin-right: 20px;
+}
+
+.navlinks {
+  font-size: 12pt;
+}
+
+button {
+  background: #649000;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}

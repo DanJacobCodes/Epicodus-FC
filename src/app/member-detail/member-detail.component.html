@@ -1,8 +1,9 @@
 <h1>Member Facts</h1>
 
-<div class="well">
-  <h3>Member:{{(memberToDisplay | async)?.name}}</h3>
-  <h4>Position:{{(memberToDisplay | async)?.position}}</h4>
-  <h4>Experience:{{(memberToDisplay | async)?.years}}</h4>
-
+<div class="container">
+  <div class="panel">
+    <h4>Member: {{(memberToDisplay | async)?.name}}</h4>
+    <h4>Position: {{(memberToDisplay | async)?.position}}</h4>
+    <h4>Experience: {{(memberToDisplay | async)?.years}} years</h4>
+  </div>
 </div>

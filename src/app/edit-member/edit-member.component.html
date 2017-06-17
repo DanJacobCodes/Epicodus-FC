@@ -1,18 +1,18 @@
 <h4>Edit Member</h4>
 
 <div>
-  <label>Name:</label>
+  <label style="font-size:18px">Name:</label>
   <br>
-  <input [(ngModel)]="selectedMember.name">
+  <input style="font-size:18px" class="form-control" [(ngModel)]="selectedMember.name">
 </div>
 
 <div>
-  <label>Position of Member:</label>
+  <label style="font-size:18px">Position of Member:</label>
   <br>
-  <input [(ngModel)]="selectedMember.position">
+  <input style="font-size:18px" class="form-control" [(ngModel)]="selectedMember.position">
 </div>
 
 <br>
-<button (click)="updatingMember(selectedMember)" class="btn btn-primary">Edit your project</button>
+<button (click)="updatingMember(selectedMember)" class="btn btn-primary">Edit</button>
 <button (click)="deletingMember(selectedMember)" class="btn btn-danger">Remove</button>
 <hr>

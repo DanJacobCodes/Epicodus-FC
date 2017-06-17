@@ -1,15 +1,22 @@
-<h3>Latest Members</h3>
+<h3 id="select">Latest Members</h3>
 <!-- Filtering by Experience -->
 <br>
-<h3 id="select">Filter by Experience:</h3>
-<select (change)="onChange($event.target.value)">
+<h3>Filter by Experience:</h3>
+<div class="input-field col s12">
+<select class ="browser-default" (change)="onChange($event.target.value)">
 <option value="all">All Members</option>
 <option value="amateur">Young Talent</option>
 <option value="veteran">Reliable Veterans</option>
 </select>
+</div>
 <hr>
 
 <!-- Members View -->
+<div class="container">
+  <button id="addMem" class="btn btn-success text-muted" routerLink="admin" >Join</button>
+  <br>
+</div>
+<br>
 <div *ngFor="let member of members | async | years:filterByYear"   class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)">Name: <em>{{member.name}}</em></h3>

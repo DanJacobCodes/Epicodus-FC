@@ -5,26 +5,26 @@
   </div>
     <div class="panel-body">
       <div>
-        <label>Name:</label>
+        <label style="font-size:14px">Name:</label>
         <br>
-        <input #newName>
+        <input #newName style="font-size:12px" class="form-control">
       </div>
 
       <div>
-        <label>Position:</label>
+        <label style="font-size:14px">Position:</label>
         <br>
-        <input #newPosition>
+        <input #newPosition style="font-size:12px">
       </div>
 
       <div>
-        <label>Experience:</label>
+        <label style="font-size:14px">Experience:</label>
         <br>
-        <input #newYears type="number">
+        <input #newYears type="number" style="font-size:12px">
       </div>
 
 
       <br>
-      <button class="btn btn-success" (click) = "submitForm(newName.value, newPosition.value, newYears.value); newName.value=''; newPosition.value=''; newYears.value=''"> Add to Epicodus FC </button>
+      <button class="btn btn-success" (click) = "submitForm(newName.value, newPosition.value, newYears.value); newName.value=''; newPosition.value=''; newYears.value=''"> Add </button>
     </div>
     <div>
       <app-welcome></app-welcome>
